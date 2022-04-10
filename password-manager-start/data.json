@@ -1,10 +1,12 @@
+
+-->Sample of how Data stored
 {
     "Amazon": {
-        "email": "fazhilumar@gmail.com",
+        "email": "example@gmail.com",
         "password": "8KK99zoQl*z!bmd"
     },
     "Facebook": {
-        "email": "fazhilumar@gmail.com",
+        "email": "example@gmail.com",
         "password": "V%h4p7qROlHJ("
     }
 }
