@@ -34,18 +34,7 @@ def generate_password():
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-    # Before List Comprehension:
-    # nr_letters = randint(8,10)
-    # nr_sym , nr_numbers ........
-
-    # for char in range(nr_letters):
-    #     password_list.append(random.choice(letters))
-
-    # for char in range(nr_symbols):
-    #     password_list += random.choice(symbols)
-
-    # for char in range(nr_numbers):
-    #     password_list += random.choice(numbers)
+  
 
     password_letters = [choice(letters) for _ in range(randint(8, 10))]
 
@@ -62,8 +51,6 @@ def generate_password():
     # --- O/P : Fazhil#umar#qathab
 
     password = "".join(password_list)
-
-    # print(f"Your password is: {password}")
 
     password_entry.delete(0, END)
     password_entry.insert(0, password)
@@ -214,3 +201,4 @@ add_button.grid(column=1, row=4, columnspan=2)
 search_button = Button(text="Search", highlightthickness=0, width=14, command=find_data)
 search_button.grid(column=2, row=1)
 window.mainloop()
+#THE END :)
